@@ -1,0 +1,47 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobile.control"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        DevicesControlActivity
+        <activity  android:name="com.mobile.control.ui.ShowPositonActivity" />
+        <activity  android:name="com.mobile.control.ui.DevicesControlActivity" />
+        <service android:name="com.mobile.control.JobService"/>
+		<meta-data  android:name="com.baidu.lbsapi.API_KEY" android:value="8UKmS9ixzhSubeeztu5fVEO0" />  
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+	<!--             百度定位                                                       -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />  
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />  
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />  
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />  
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  
+    <uses-permission android:name="android.permission.INTERNET" />  
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />  
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />  
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />  
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />  
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />  
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />  
+    
+</manifest>

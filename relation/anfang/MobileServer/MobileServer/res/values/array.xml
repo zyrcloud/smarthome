@@ -1,0 +1,14 @@
+<resources>
+   <string-array name="loglevel">
+       <item>debug </item>
+       <item>info </item>
+       <item>error </item>
+       <item>off </item>
+   </string-array>
+   <string-array name="loglevel_values">
+       <item>3</item>
+       <item>4 </item>
+       <item>6 </item>
+       <item>10</item>
+   </string-array>
+</resources>

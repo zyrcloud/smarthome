@@ -1,0 +1,35 @@
+C51 COMPILER V9.00   MAIN                                                                  05/24/2014 00:33:18 PAGE 1   
+
+
+C51 COMPILER V9.00, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN main.OBJ
+COMPILER INVOKED BY: d:\Keil\C51\BIN\C51.EXE main.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include<reg52.h>
+   2          char temp;
+   3          void main(){
+   4   1        P0 = 0XFF;
+   5   1        P1 = 0XFF;
+   6   1        while(1){
+   7   2           //temp = (0XFD | P1 << 1);
+   8   2               //P1 = temp;
+   9   2               //P1 = (0XFD | P1 << 1);
+  10   2               P1 = P0;
+  11   2        }
+  12   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     11    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =      1    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

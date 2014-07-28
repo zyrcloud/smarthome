@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent" 
+    android:orientation="vertical" >  
+    <Button   
+        android:id="@+id/bTakePic"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:text="takePhoto"/>  
+    <Button   
+        android:id="@+id/bConnectBlueth"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:text="ConnectBlueth"/>  
+    <Button   
+        android:id="@+id/bOpenConfig"  
+        android:layout_width="match_parent"  
+        android:layout_height="wrap_content"  
+        android:text="OpenConfig"/> 
+</LinearLayout>  

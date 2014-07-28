@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<PreferenceScreen 
+  xmlns:android="http://schemas.android.com/apk/res/android"
+     android:title="Settings"> 
+	<PreferenceCategory  android:title="系统配置"/>
+	<CheckBoxPreference
+	    android:key="autoStart"
+	    android:title="事件触发启动"
+	    android:defaultValue="true"
+	    android:summaryOn="自动启动"
+	    android:summaryOff="手动启动"/>
+	<CheckBoxPreference
+	    android:key="usebluetooths"
+	    android:title="启用蓝牙通讯"
+	    android:defaultValue="false"
+	    android:summaryOn="使用蓝牙连接下位机"
+	    android:summaryOff="不连接下位机"/>
+	
+	<EditTextPreference
+	    android:key="nickname"
+	    android:title="昵称"
+	    android:dialogTitle="设置设备昵称"/>
+	
+	<PreferenceCategory  android:title="email 设置"/>
+	<EditTextPreference
+	    android:key="emailFrom"
+	    android:title="发送方地址"
+	    android:dialogTitle="设置发送方地址"/>    
+	<EditTextPreference
+	    android:key="emailFromPwd"
+	    android:title="发送方地址"
+	    android:dialogTitle="设置发送方密码"/>    
+	<EditTextPreference
+	    android:key="emailHost"
+	    android:title="SMTP域名"
+	    android:dialogTitle="设置SMTP域名"/>    
+	<EditTextPreference
+	    android:key="emailPort"
+	    android:title="SMTP端口"
+	    android:dialogTitle="设置SMTP端口"/>
+	<EditTextPreference
+	    android:key="emailTo"
+	    android:title="接受方地址"
+	    android:dialogTitle="设置接受方地址"/>
+	<CheckBoxPreference
+	    android:key="smtpAuth"
+	    android:title="smtp鉴权设置"
+	    android:summaryOn="需要鉴权"
+	    android:summaryOff="不做鉴权"
+	    />
+	
+	<PreferenceCategory  android:title="拍照设置"/>
+	<EditTextPreference
+	    android:key="photoSavePath"
+	    android:title="照片保存路径"
+	    android:dialogTitle="设置照片保存的文件夹"/>
+	<CheckBoxPreference
+	    android:key="photoDelPic"
+	    android:title="发送后照片处理"
+	    android:summaryOn="删除照片"
+	    android:summaryOff="保留照片" 
+	    />
+	
+	<PreferenceCategory  android:title="调测设置"/>
+	<ListPreference
+	    android:key="logLevel"
+	    android:title="日志级别设置"
+	    android:entries="@array/loglevel"
+	    android:entryValues="@array/loglevel_values"
+	    android:defaultValue="10"
+	    android:dialogTitle="选择日志级别"/>
+	<CheckBoxPreference
+	    android:key="canToast"
+	    android:title="弹Toast设置"
+	    android:summaryOn="允许Toast提示"
+	    android:summaryOff="关掉Toast提示" 
+	    />
+	<CheckBoxPreference
+	    android:key="resetConfig"
+	    android:title="还原默认配置"
+	    android:summaryOn="点击了就重置!!"
+	    android:summaryOff="点击了就重置!!"
+	    />
+
+</PreferenceScreen>   

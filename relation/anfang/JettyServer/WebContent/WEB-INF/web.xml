@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>testJetty</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>for out call</description>
+    <display-name>WelcomeServlet</display-name>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>com.android.servlet.WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>for push regist</description>
+    <display-name>PushRegist</display-name>
+    <servlet-name>PushRegist</servlet-name>
+    <servlet-class>com.android.servlet.PushRegist</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PushRegist</servlet-name>
+    <url-pattern>/PushRegist</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>init system when setup</description>
+    <display-name>SystemInitServlet</display-name>
+    <servlet-name>SystemInitServlet</servlet-name>
+    <servlet-class>com.android.servlet.SystemInitServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SystemInitServlet</servlet-name>
+    <url-pattern>/SystemInitServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ManagerSerlet</display-name>
+    <servlet-name>ManagerSerlet</servlet-name>
+    <servlet-class>com.android.servlet.ManagerSerlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ManagerSerlet</servlet-name>
+    <url-pattern>/ManagerSerlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LocationReport</display-name>
+    <servlet-name>LocationReport</servlet-name>
+    <servlet-class>com.android.servlet.LocationReport</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LocationReport</servlet-name>
+    <url-pattern>/LocationReport</url-pattern>
+  </servlet-mapping>
+</web-app>
